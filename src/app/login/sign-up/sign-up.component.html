@@ -1,0 +1,30 @@
+<form style="text-align: center;">
+    <p>
+        <mat-form-field class="example-full-width" style="align-content:center;  width: 50%">
+            <mat-label>Usuario:</mat-label>
+            <input matInput placeholder="" [(ngModel)]="user.login" value="" name="login">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="example-full-width" style="align-content:center; width: 50%">
+            <mat-label>Pass:</mat-label>
+            <input matInput placeholder="" [(ngModel)]="user.pass" value="" name="pass" type="password">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="example-full-width" style="align-content:center; width: 50%">
+            <mat-label>Nombre:</mat-label>
+            <input matInput placeholder="" [(ngModel)]="user.nombre" value="" name="nombre" type="text">
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field class="example-full-width" style="align-content:center; width: 50%">
+            <mat-label>Apellidos:</mat-label>
+            <input matInput placeholder="" [(ngModel)]="user.apellidos" value="" name="apellidos" type="text">
+        </mat-form-field>
+    </p>
+    <button mat-raised-button color="accent" style="align-content:center;" (click)="registrar()">Aceptar</button>
+
+
+</form>
